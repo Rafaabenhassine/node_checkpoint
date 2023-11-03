@@ -5,8 +5,10 @@ http.createServer((request,response)=>{
     response.end("Hello Node!!!!")
 }).listen(3000)
 
+console.log("the server is running at http://127.0.0.1:3000/")
+
 const fs=require("fs")
-fs.writeFile("Welcome.txt","Hello Node",function(error)
+fs.writeFile("Welcome.txt","Hello Node!",function(error)
 
 {
     if(error)throw (error)
